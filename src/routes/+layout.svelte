@@ -167,6 +167,17 @@ div#mobile {
   .menu-panel.open {
     left: 0; 
   }
+  @keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 
 </style>
@@ -192,7 +203,7 @@ div#mobile {
            </a>
 
             <a style="border: none;" id="linkedin" href="/">
-                <img src="/icons/linkedin.svg" alt="">
+                <img src="/icons/linkedin.png" alt="">
             </a>
 
         </div>
