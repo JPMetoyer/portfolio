@@ -10,6 +10,7 @@
     <title>jpmetoyer.dev </title>
 
 
+
 </svelte:head>
 
 
@@ -22,6 +23,7 @@
   </script>
 
 <style lang="scss">
+
 
 
 
@@ -52,6 +54,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
+    position: fixed;  // Add this line
+    top: 0;           // Add this line
+    width: 100%;      // Add this line
 
 
     a {
@@ -110,6 +115,9 @@ div#mobile {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: fixed;  // Add this line
+        top: 0;           // Add this line
+        width: 100%;
 
         a {
             color: white;
@@ -140,16 +148,15 @@ div#mobile {
     display: flex;
     flex-direction: column;
     align-items:  center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
     gap: 1rem;
     position: fixed;
     top: 0;
     left: -100%; 
     bottom: 0;
-    width: 20%; 
+    width: 30%; 
     transition: left 0.3s ease-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    z-index: 100;
     padding: 20px;
 
     a {
@@ -161,11 +168,17 @@ div#mobile {
     #slide-contact {
         display: flex;
         justify-content: flex-start;
+
+        
     }
   }
 
   .menu-panel.open {
     left: 0; 
+    position: fixed;
+    z-index: 1000;
+
+
   }
   @keyframes slideIn {
   from {
@@ -218,7 +231,7 @@ div#mobile {
 
         <button on:click={toggleMenu}   style="cursor: pointer;"><img src="/icons/menu.svg" alt="Menu"></button>
 
-        <div class="menu-panel" class:open={isMenuOpen}>
+        <div class="menu-panel"      class:open={isMenuOpen}>
             <a href="/"> JPMETOYER.dev</a>
             <a href="/">Home</a>
             <a href="/">About</a>
@@ -227,7 +240,7 @@ div#mobile {
 
             <div id="slide-contact">
                 <a href="/" style="border: none;"><img src="/icons/github.svg" alt="GitHub"></a>
-                <a href="/" style="border: none;"><img src="/icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="/" style="border: none;"><img src="/icons/linkedin.png" alt="LinkedIn"></a>
             </div>
             
           </div>
