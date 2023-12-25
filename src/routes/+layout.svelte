@@ -24,118 +24,91 @@
 
 <style lang="scss">
 
+* {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+
+    }
 
 
-
-
-
-#cover {
-    z-index: -1;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-
-
-    
-
-
+   
 nav {
-    z-index: 5;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    position: fixed;  // Add this line
-    top: 0;           // Add this line
-    width: 100%;      // Add this line
+    justify-content: space-around;
+    background-color: lightcoral;
+    padding-bottom: 15px;
+    padding-top: 15px;
+   
 
+    align-items: center;
 
     a {
-        color: white;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        border:  1px solid #3396ff;
-        padding: 5px 9px;
-
-        &:hover {
-            transition: all 140ms ease-in-out;
-           color: #3396ff;
-        }
+        font-family: 'Nunito', sans-serif;
+        font-size: 32px;
+        color: white ;
     }
 
     div#links {
         display: flex;
         flex-direction: row;
         gap: 2rem;
-    }
+        align-items: center;
 
-    div#sites #github img  {
-        transition: transform 240ms ease-in-out;
+        a {
 
-        &:hover {
-            transform: rotate(-45deg);
+            font-family: 'Nunito', sans-serif;
+            font-size: 24px;
+            color: white;
+            transition: transform 0.3s ease, color 0.3s ease;
 
+
+            &:hover {
+                border-bottom: 1px solid brown;
+                transform: translateY(-5px);
+
+                
+            }
         }
-    }
-
-    div#sites #linkedin img  {
-        transition: transform 240ms ease-in-out;
-
-        &:hover {
-            transform: rotate(45deg);
-
-        }
 
     }
-    
+
 }
+
+
+
+
 
 div#mobile {
     display: none;
 }
 
 
-@media screen and (max-width:970px) {
+@media screen and (max-width:720px) {
 
     nav {
         display: none;
     }
 
     div#mobile {
+        height: 4rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: fixed;  // Add this line
-        top: 0;           // Add this line
-        width: 100%;
+        background-color: lightcoral;
 
         a {
             color: white;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            border:  1px solid #3396ff;
-            padding: 5px 9px;
+            font-family: 'Nunito', sans-serif;
+            margin-left: 10px;
+            font-size: 20px;
         }
 
-        button {
-            background: none;
-            border: none;
-            width: 2.9rem;
-            height: auto;
-            margin-right: 10px;
-
-            
-        }
+      
+        
     }
 
     
@@ -206,21 +179,7 @@ div#mobile {
             <a href="/"> Contact</a>
         </div>
 
-        <div id="sites">
-
-
-
-           <a style="border: none;" id="github" href="/">
-            <img src="/icons/github.svg" alt="">
-
-           </a>
-
-            <a style="border: none;" id="linkedin" href="/">
-                <img src="/icons/linkedin.png" alt="">
-            </a>
-
-        </div>
-
+        
     </nav>
 
 
@@ -229,7 +188,7 @@ div#mobile {
 
         
 
-        <button on:click={toggleMenu}   style="cursor: pointer;"><img src="/icons/menu.svg" alt="Menu"></button>
+        <button on:click={toggleMenu}   style="cursor: pointer; width: 2rem; height:auto; margin-right:15px; background:none; border: none; "><img src="/icons/menu.svg" alt="Menu"  style="width: 100%; height:100%"></button>
 
         <div class="menu-panel"      class:open={isMenuOpen}>
             <a href="/"> JPMETOYER.dev</a>
@@ -260,4 +219,3 @@ div#mobile {
 
 
 
-<img  id="cover" src="/images/cover.webp" alt="">
