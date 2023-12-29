@@ -37,7 +37,6 @@ section#hero {
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
-        backdrop-filter: blur(10px);
         height: fit-content;
         padding: .5rem;
         border-radius: 2rem;
@@ -64,7 +63,6 @@ section#hero {
 
         img {
             border-radius: 20rem;
-            backdrop-filter: blur(10px);
         }
     }
 }
@@ -123,14 +121,14 @@ section#hero div#content p span {
 
     <section id="hero">
 
-        <div id="content">
+        <div id="content" style="  backdrop-filter: blur(10px) ">
             <h1>Front-End Web <span style="display: block;"> Developer</span></h1>
             <p>Hi, I am Jean-Paul Metoyer. A passionate Web Developer <span> and Programmer, and a aspiring NYU student.</span> </p>
     
         </div>
     
         <div id="graphic">
-            <img src="/images/me2.png" alt="">
+            <img  style="backdrop-filter: blur(10px);  "  src="/images/me2.png" alt="">
     
         </div>
     
