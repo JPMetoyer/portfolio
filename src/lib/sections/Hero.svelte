@@ -5,12 +5,11 @@
 
 <style lang="scss">
 
-:global(html), :global(body) {
+* {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     text-decoration: none;
     box-sizing: border-box;
-
 }
 
 article {
@@ -28,6 +27,7 @@ article {
 
 
 section#hero {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;

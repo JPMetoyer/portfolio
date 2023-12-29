@@ -153,8 +153,7 @@ div#mobile {
   .menu-panel.open {
     left: 0; 
     position: fixed;
-    z-index: 1000;
-
+    z-index: 1;
 
   }
   @keyframes slideIn {
