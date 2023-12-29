@@ -20,16 +20,20 @@
     function toggleMenu() {
       isMenuOpen = !isMenuOpen;
     }
-  </script>
+</script>
 
 <style lang="scss">
 
-* {
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
+:global(html), :global(body) {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 
-    }
+}
+
+* {
+    text-decoration: none;
+}
 
 
    
@@ -186,9 +190,7 @@ div#mobile {
     <div id="mobile">
         <a href="/"> JPMETOYER.dev</a>
 
-        
-
-        <button on:click={toggleMenu}   style="cursor: pointer; width: 2rem; height:auto; margin-right:15px; background:none; border: none; "><img src="/icons/menu.svg" alt="Menu"  style="width: 100%; height:100%"></button>
+        <button on:click={toggleMenu}   style="cursor: pointer; width: 2.5rem; height:auto; margin-right:15px; background:none; border: none; "><img src="/icons/menu.svg" alt="Menu"  style="width: 100%; height:100%"></button>
 
         <div class="menu-panel"      class:open={isMenuOpen}>
             <a href="/"> JPMETOYER.dev</a>
