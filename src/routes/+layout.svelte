@@ -125,7 +125,8 @@ div#mobile {
     display: flex;
     flex-direction: column;
     align-items:  center;
-    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px); /* For WebKit browsers like Chrome and Safari */
+    backdrop-filter: blur(14px);   
     gap: 1rem;
     position: fixed;
     top: 0;

@@ -40,7 +40,8 @@ section#hero {
         height: fit-content;
         padding: .5rem;
         border-radius: 2rem;
-
+        -webkit-backdrop-filter: blur(10px); /* For WebKit browsers like Chrome and Safari */
+        backdrop-filter: blur(10px);   
         h1 {
             margin-top: 0;
             width: max-content;
@@ -63,6 +64,8 @@ section#hero {
 
         img {
             border-radius: 20rem;
+            -webkit-backdrop-filter: blur(10px); /* For WebKit browsers like Chrome and Safari */
+            backdrop-filter: blur(10px);   
         }
     }
 }
@@ -121,14 +124,14 @@ section#hero div#content p span {
 
     <section id="hero">
 
-        <div id="content" style="  backdrop-filter: blur(10px) ">
+        <div id="content" >
             <h1>Front-End Web <span style="display: block;"> Developer</span></h1>
             <p>Hi, I am Jean-Paul Metoyer. A passionate Web Developer <span> and Programmer, and a aspiring NYU student.</span> </p>
     
         </div>
     
         <div id="graphic">
-            <img  style="backdrop-filter: blur(10px);  "  src="/images/me2.png" alt="">
+            <img  src="/images/me2.png" alt="">
     
         </div>
     
