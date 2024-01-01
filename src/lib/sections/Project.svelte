@@ -34,6 +34,26 @@ article {
     gap: 3rem;
     padding-bottom: 3rem;
 
+    div#header {
+        width: 60rem;
+      
+        
+        p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        color: lightcoral;
+        font-weight: 700;
+        }
+
+        h3 {
+            
+            font-family:'Poppins', sans-serif;
+            font-size: 25px;
+            color: #2d2e32;
+            margin: 0 0 0 0;
+        }
+    }
+
     section {
         display: flex;
         flex-direction: row;
@@ -111,6 +131,10 @@ article {
 }
 
 @media screen and (max-width: 990px) {
+
+   article div#header {
+    width: 70vw;
+   }
     article section {
         display: flex;
         flex-direction: column;
@@ -151,16 +175,53 @@ article {
 }
 
 @media screen and (max-width:660px) {
-    article section {
-        width: 75vw;
+
+    
+    article {
+
+        div#header {
+            width: 70vw;
+        }
+
+        section {
+        width: 70vw;
     }
-}
+        
+    }
+    
+    
+    
+   }
+
+   @media screen and (max-width:440px) {
+    article div#header {
+        h3 {
+            text-align: center;
+        }
+    }
+   }
+
+
 
 
 
 </style>
 
+
+
+
+
 <article>
+
+    <div id="header">
+        <p>PORTFOLIO</p>
+        <h3>Each project showcases my growth and journey in Web Development</h3>
+    
+    </div>
+
+   
+
+   
    
     <section id="afyadux">
 
