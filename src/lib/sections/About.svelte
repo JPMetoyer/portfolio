@@ -31,6 +31,7 @@ let activeSectionIndex = 0;
 
 
     section#about {
+        
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -43,6 +44,9 @@ let activeSectionIndex = 0;
         padding-bottom: 3rem ;
 
         div#graphic {
+            
+            -webkit-backdrop-filter: blur(10px); /* For WebKit browsers like Chrome and Safari */
+        backdrop-filter: blur(10px);   
             width: 26rem;
             img {
                 height: 20rem;
@@ -53,6 +57,10 @@ let activeSectionIndex = 0;
         }
 
         div#content {
+            border-radius: 1.7rem;
+            padding: .5rem;
+            -webkit-backdrop-filter: blur(10px); /* For WebKit browsers like Chrome and Safari */
+        backdrop-filter: blur(10px);   
             display: flex;
             flex-direction: column;
             width: 30rem;
@@ -62,7 +70,7 @@ let activeSectionIndex = 0;
                 font-family: 'Poppins', sans-serif;
                 font-size: 17px;
                 font-weight: 700;
-                color: lightcoral;
+                color: rgb(229, 145, 145);
                 margin-bottom: 10px;
 
             }
@@ -71,13 +79,13 @@ let activeSectionIndex = 0;
                 font-size: 25px;
                 font-family: 'Poppins', sans-serif;
                 line-height: 1.4;
-                color: #2d2e32;
+                color: #fff;
                 margin-bottom: 1rem;
             }
 
             p {
                 font-size: 17px;
-                color: #767676;
+                color: lightgray;
                 font-family: 'Mulish', sans-serif;
                 font-weight: 500;
                 line-height: 1.5;

@@ -1,6 +1,3 @@
-
-
-
 <svelte:head>
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -44,6 +41,11 @@ nav {
     background-color: lightcoral;
     padding-bottom: 15px;
     padding-top: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+   
    
 
     align-items: center;
@@ -96,6 +98,7 @@ div#mobile {
     }
 
     div#mobile {
+        width: 110vw;
         height: 4rem;
         display: flex;
         flex-direction: row;
