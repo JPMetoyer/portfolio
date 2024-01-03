@@ -33,6 +33,7 @@
 	"svelte": "./dist/index.js",
 	"type": "module",
 	"dependencies": {
+		"firebase": "^10.7.1",
 		"sass": "^1.69.5",
 		"scss": "^0.2.4"
 	}
