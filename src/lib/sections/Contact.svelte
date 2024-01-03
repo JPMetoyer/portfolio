@@ -1,6 +1,6 @@
-<script lang="ts">
+<!-- <script lang="ts">
       import { getDatabase, ref, push } from "firebase/database";
-      import {app} from '../firebase/firebase.js';
+      import {app} from '../firebase/firebase.js'
       import Textfield from "$lib/components/textfield.svelte";
       
       let name = '';
@@ -78,4 +78,4 @@
 
 
 
-</section>
+</section> -->
