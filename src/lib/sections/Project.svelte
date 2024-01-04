@@ -23,6 +23,8 @@ article {
 
     div#header {
         width: 60rem;
+
+        text-align: center;
       
         
         p {
@@ -120,6 +122,7 @@ article {
 @media screen and (max-width: 990px) {
 
    article div#header {
+
     width: 70vw;
    }
     article section {

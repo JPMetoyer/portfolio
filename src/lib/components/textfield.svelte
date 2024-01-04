@@ -72,7 +72,6 @@
 
     div.textfield {
         position: relative;
-        width: 100%;
         height: max-content;
 
         margin-bottom: 0rem;
@@ -90,7 +89,6 @@
             border: 1px solid app.$color-shade;
             background-color: app.$color-elevate;
 
-            width: 94%;
             height: max-content;
 
             &::placeholder {

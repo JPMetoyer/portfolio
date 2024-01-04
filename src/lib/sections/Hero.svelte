@@ -36,7 +36,7 @@ section#hero {
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
-
+    padding-bottom: 10rem;
     div#content {
         margin-top: 2rem;
         display: flex;

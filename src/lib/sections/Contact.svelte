@@ -53,17 +53,42 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
+
+      button {
+          border-radius: 10rem;
+          background: none;
+          border: 1px solid    #FFFDD0;
+          padding: .3rem;
+          color: #a04f07;
+          font-size: 15px;
+          font-weight: 700px;
+          font-family: 'Poppins', sans-serif;
+          background-color: #FFFDD0;
+          transition: transform 0.3s ease, 0.3s ease;
+
+          
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: 0px 0px 8px 0pc;
+            transition: all  240ms ease-in-out;
+
+          }
+ 
+          
+        }
       
 
       textarea {
         resize: none;
-        width: 100%;
         height: 5rem;
         border-radius: .3rem;
 
         &:focus {
           outline: none;
         }
+
+        
       }
       
 

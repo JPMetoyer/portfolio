@@ -99,6 +99,9 @@ div#mobile {
 
     div#mobile {
         width: 100%;
+        position: fixed;
+        z-index: 5;
+        top: 0;
         height: 4rem;
         display: flex;
         flex-direction: row;
