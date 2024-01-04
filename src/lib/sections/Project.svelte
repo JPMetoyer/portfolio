@@ -1,20 +1,5 @@
 <script lang="ts">
 
-// let videoElement: { play: () => void; pause: () => void; currentTime: number; };
-
-// // Play video on hover
-// function playVideo() {
-//     videoElement.play();
-// }
-
-// // Pause and rewind video when not hovering
-// function pauseAndRewindVideo() {
-//     videoElement.pause();
-//     videoElement.currentTime = 0; // Rewind to start
-// }
-
-
-
 
 </script>
 
@@ -28,6 +13,8 @@
 
 
 article {
+    margin-bottom: 5rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +28,7 @@ article {
         p {
         font-family: 'Poppins', sans-serif;
         font-size: 17px;
-        color: lightcoral;
+        color:#FFFDD0;
         font-weight: 700;
         }
 

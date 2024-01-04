@@ -31,6 +31,10 @@ let activeSectionIndex = 0;
 
 
     section#about {
+
+        margin-bottom: 5rem;
+
+
         
         display: flex;
         flex-direction: row;
@@ -70,7 +74,7 @@ let activeSectionIndex = 0;
                 font-family: 'Poppins', sans-serif;
                 font-size: 17px;
                 font-weight: 700;
-                color: rgb(229, 145, 145);
+                color: #FFFDD0;
                 margin-bottom: 10px;
 
             }
@@ -85,7 +89,7 @@ let activeSectionIndex = 0;
 
             p {
                 font-size: 17px;
-                color: lightgray;
+                color: white;
                 font-family: 'Mulish', sans-serif;
                 font-weight: 500;
                 line-height: 1.5;

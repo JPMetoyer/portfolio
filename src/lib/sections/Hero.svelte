@@ -15,10 +15,16 @@
 article {
    
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items:  center;
     justify-content: center;
+
+    background-image: url('/images/coffee.webp');
+    background-position: right center; /* Adjusts where the image is positioned */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Scales the image as large as possible without stretching. Change to 'contain' if you want to see the whole image */
+    background-attachment: fixed; 
   
 }
 
@@ -37,6 +43,7 @@ section#hero {
         flex-direction: column;
         height: fit-content;
         padding: .5rem;
+        padding-bottom: 1rem;
         border-radius: 2rem;
         -webkit-backdrop-filter: blur(10px); /* For WebKit browsers like Chrome and Safari */
         backdrop-filter: blur(10px);   
@@ -124,7 +131,7 @@ section#hero div#content p span {
 
         <div id="content" >
             <h1>Front-End Web <span style="display: block;"> Developer</span></h1>
-            <p>Hi, I am Jean-Paul Metoyer. A passionate Web Developer <span> and Programmer, and a aspiring NYU student.</span> </p>
+            <p>Hi, I am Jean-Paul Metoyer. A passionate Web Developer <span> and Programmer, and an aspiring NYU student.</span> </p>
     
         </div>
     

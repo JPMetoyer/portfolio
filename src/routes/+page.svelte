@@ -14,17 +14,10 @@
     main {
         
         width: 100%;
-        height: 100vh;
+        min-height: 100vh; /* Ensure at least full viewport height */
+        background-color: lightcoral;
 
-        img {
-            position: fixed; /* Fix the image position */
-            top: 0;
-            left: 0;
-            width: 100%; /* Cover the full viewport width */
-            height: 100%; /* Cover the full viewport height */
-            object-fit: cover; /* Ensure the image covers the area */
-            z-index: -1; /* Place it behind the content */
-        }
+
 
        
   
@@ -34,7 +27,7 @@
 
 <main>
 
-    <img src="/images/coffee.webp" alt="">
+    
 
     <Hero />
     <About />

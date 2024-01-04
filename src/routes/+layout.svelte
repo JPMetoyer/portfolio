@@ -98,7 +98,7 @@ div#mobile {
     }
 
     div#mobile {
-        width: 110vw;
+        width: 100%;
         height: 4rem;
         display: flex;
         flex-direction: row;

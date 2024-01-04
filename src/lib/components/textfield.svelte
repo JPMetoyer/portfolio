@@ -72,7 +72,6 @@
 
     div.textfield {
         position: relative;
-        flex-grow: 1;
         width: 100%;
         height: max-content;
 
@@ -91,7 +90,7 @@
             border: 1px solid app.$color-shade;
             background-color: app.$color-elevate;
 
-            width: 100%;
+            width: 94%;
             height: max-content;
 
             &::placeholder {
@@ -113,7 +112,7 @@
             left: 0rem;
             right: 0px;
 
-            color: app.$color-error;
+            color: black;
             font-size: 0.8rem;
             margin: 0.1rem 0px;
 
@@ -127,7 +126,7 @@
         }
 
         &.error input {
-            border: 1px solid app.$color-error;
+            border: 1px solid black;
         }
 
         &.error label#error {
@@ -162,8 +161,10 @@
             align-items: center;
 
             label {
-                font-size: 0.8rem;
+                font-size: .9rem;
                 margin: 0.1rem 0px;
+                font-weight: 700;
+                color: #FFFDD0;
             }
 
            
