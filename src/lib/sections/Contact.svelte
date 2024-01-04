@@ -83,6 +83,7 @@
         resize: none;
         height: 5rem;
         border-radius: .3rem;
+        outline: none;
 
         &:focus {
           outline: none;

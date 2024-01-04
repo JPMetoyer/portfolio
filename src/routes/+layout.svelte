@@ -176,6 +176,46 @@ div#mobile {
 
 
 
+footer {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    div#f-links {
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+
+        a {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            
+      
+        }
+    }
+
+    div#trail {
+        display: flex;
+        align-items: center;
+
+        p {
+            color: white;
+             margin: 0;
+             padding-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:790px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+
+
 </style>
 
     <nav>
@@ -221,6 +261,19 @@ div#mobile {
 
 
 <footer>
+
+    <div id="f-links">
+        <a href="/">Home</a>
+        <a href="/"> About</a>
+        <a href="/"> Projects</a>
+        <a href="/"> Contact</a>
+
+    </div>
+
+    <div id="trail">
+        <p> © Jean-Paul Metoyer. Designed in a Starbucks Cafe ☕</p>
+
+    </div>
 
 
 </footer>

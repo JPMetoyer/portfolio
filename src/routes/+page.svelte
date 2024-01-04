@@ -1,6 +1,7 @@
 
 
 <script lang="ts">
+
     import Hero from "$lib/sections/Hero.svelte";
     import About from "$lib/sections/About.svelte";
     import Project from "$lib/sections/Project.svelte";
@@ -14,7 +15,7 @@
     main {
         
         width: 100%;
-        min-height: 100vh; /* Ensure at least full viewport height */
+        min-height: 100vh; 
         background-color: lightcoral;
 
 
@@ -29,7 +30,7 @@
 
     
 
-    <Hero />
+    <Hero   />
     <About />
     <Project />
     <Contact />
