@@ -38,7 +38,7 @@ article {
             
             font-family:'Poppins', sans-serif;
             font-size: 25px;
-            color: #2d2e32;
+            color: white;
             margin: 0 0 0 0;
         }
     }
