@@ -18,6 +18,10 @@
         min-height: 100vh; 
         background-color: lightcoral;
 
+        div {
+            scroll-behavior: smooth;
+        }
+
 
 
        
@@ -28,12 +32,29 @@
 
 <main>
 
-    
 
-    <Hero   />
-    <About />
-    <Project />
-    <Contact />
+    <div id="hero">
+        <Hero  />
+    </div>
+    
+    <div id="about">
+        <About />
+
+
+    </div>
+
+    <div id="project" >
+        <Project />
+
+
+    </div>
+
+    <div id="contact" >
+        <Contact />
+
+
+    </div>
+
 
 </main>
 

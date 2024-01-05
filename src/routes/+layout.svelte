@@ -12,11 +12,30 @@
 
 
 <script lang="ts">
+
+    import '$lib/app.scss';
     let isMenuOpen = false;
   
     function toggleMenu() {
       isMenuOpen = !isMenuOpen;
     }
+
+
+    function scrollToSection(event) {
+    event.preventDefault();
+    const targetId = event.target.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offsetTop = targetElement.offsetTop - 70; 
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+
 </script>
 
 <style lang="scss">
@@ -27,6 +46,8 @@
     text-decoration: none;
 
 }
+
+
 
 * {
     text-decoration: none;
@@ -68,6 +89,7 @@ nav {
             font-size: 24px;
             color: white;
             transition: transform 0.3s ease, color 0.3s ease;
+
 
 
             &:hover {
@@ -113,6 +135,8 @@ div#mobile {
             font-family: 'Nunito', sans-serif;
             margin-left: 10px;
             font-size: 20px;
+
+           
         }
 
       
@@ -189,6 +213,14 @@ footer {
         a {
             color: white;
             font-family: 'Poppins', sans-serif;
+            transition: transform 0.3s ease, color 0.3s ease;
+
+
+            &:hover {
+                border-bottom: 1px solid brown;
+                transform: translateY(-5px);
+
+            }
             
       
         }
@@ -221,10 +253,10 @@ footer {
         <a href="/"> JPMETOYER.dev</a>
 
         <div id="links">
-            <a href="/"> Home</a>
-            <a href="/"> About </a>
-            <a href="/"> Projects</a>
-            <a href="/"> Contact</a>
+            <a href="#hero" on:click={scrollToSection}> Home</a>
+            <a href="#about" on:click={scrollToSection}> About </a>
+            <a href="#project" on:click={scrollToSection}> Projects</a>
+            <a href="#contact" on:click={scrollToSection}> Contact</a>
         </div>
 
         
@@ -261,10 +293,10 @@ footer {
 <footer>
 
     <div id="f-links">
-        <a href="/">Home</a>
-        <a href="/"> About</a>
-        <a href="/"> Projects</a>
-        <a href="/"> Contact</a>
+        <a href="#hero" on:click={scrollToSection}> Home</a>
+            <a href="#about" on:click={scrollToSection}> About </a>
+            <a href="#project" on:click={scrollToSection}> Projects</a>
+            <a href="#contact" on:click={scrollToSection}> Contact</a>
 
     </div>
 
