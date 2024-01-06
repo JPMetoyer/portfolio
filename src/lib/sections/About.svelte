@@ -6,8 +6,7 @@ let activeSectionIndex = 0;
 
         { title: "My fledgling skills in Web Development", content: "Flashback to my sophomore year in High School, my beginnings in Web Development started. My friends and I noticed the lack of computer science opportunities at our school, so we decided to start the 'Wunsche Coding Initiative.' The entire point of the club was for the officers to teach students the ins and outs of Web Development, and to also share our passion for design and code." },
         { title: "My first taste of Competition in Computer Science", content: "Winnings competitions is one of the biggest motivators for getting better in Web Dev. The first competition I did was for TexasUIL's Computer Programming. It was in the Java Programming language, so as a beginner in coding, needless to say it was pretty challenging. Me and my partner Carl won at the state level, and thats where I found my love for competition.  " },
-        { title: "Winning at the highest level", content: "About a week after winning the UIL competition, I was told that I had to sub in for a guy named Aaron who competed with a Coding Initiative officer, carl, at SkillsUSA's Web Development & Design Competition at the state level. I was pretty nervous, but we were able to go all the way to nationals and win at the highest level for SkillsUSA. It was one of the best moments I've experienced in school. " },
-        { title: "What I do currently", content: "As of now, i am currently juggling multiple projects, whether its developing sites for competitions or writing curriculum for the club students. I find myself frequently at Starbucks or Dutchbros, discussing with the other club officers about the newest web technologies over a hot cup of coffee. I am doing this while also trying to ignore the impending dread of college applications." },
+        { title: "Winning competitions for SkillsUSA Web Dev", content: "During the Summer following my Junior Year, I competed at the National level for SkillsUSA's Web Design and D Competition. Through determination and a bit of luck, me and my partner carl were able to win the entire tournament. Our success changed my viewpoint in this field and reaffirmed my passion and love for Web Design and Development. " },
 
         // Add more sections as needed
     ];
@@ -108,6 +107,25 @@ let activeSectionIndex = 0;
                 }
             }
 
+            div#coffee {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1rem;
+
+                img {
+                    border-radius: 1.7rem;
+                    padding: .2rem;
+                    width: 3rem;
+                    height: auto;
+                    background-color: transparent;
+
+                    &.active {
+                        background-color: #FFE7CB;
+                    }
+                }
+            }
+
             
         }
 
@@ -173,6 +191,12 @@ let activeSectionIndex = 0;
             </button>
 
         </div>
+
+        <div id="coffee">
+            {#each aboutSections as section, index}
+              <img src={`/icons/coffee${index + 1}.svg`} alt={`Coffee ${index + 1}`} class:active={index === activeSectionIndex} />
+            {/each}
+          </div>
 
     </div>
 </section>

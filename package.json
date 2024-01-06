@@ -35,6 +35,7 @@
 	"dependencies": {
 		"firebase": "^10.7.1",
 		"sass": "^1.69.5",
+		"scrolltrigger": "^1.0.1",
 		"scss": "^0.2.4"
 	}
 }
