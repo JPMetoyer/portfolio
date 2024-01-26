@@ -1,5 +1,7 @@
 <script lang="ts">
 
+    let Popup = false;
+
 
 </script>
 
@@ -204,7 +206,7 @@ article {
 <article>
 
     <div id="header">
-        <p>PORTFOLIO</p>
+        <p>Cappuccino Creations</p>
         <h3>Each project showcases my growth and journey in Web Development</h3>
     
     </div>

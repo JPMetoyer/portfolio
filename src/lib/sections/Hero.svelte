@@ -1,5 +1,8 @@
 <script lang="ts">
 
+import { onMount } from 'svelte';
+  import { slide } from 'svelte/transition';
+
 
 </script>
 
@@ -122,6 +125,10 @@ section#hero div#content p span {
 }
 
 
+
+
+
+
 </style>
 
 
@@ -135,7 +142,7 @@ section#hero div#content p span {
     
         </div>
     
-        <div id="graphic">
+        <div id="graphic" >
             <img  src="/images/me2.png" alt="">
     
         </div>

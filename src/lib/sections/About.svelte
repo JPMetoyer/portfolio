@@ -5,8 +5,8 @@ let activeSectionIndex = 0;
         { title: "A passionate Front-End Developer with experience", content: "As a beginner in Web Development and Design, I am constantly seeking for more information and education within this field. I posesse a range of skills in HTML, CSS Sveltekit, React, Javascript, Typescript, and SCSS. I have also worked with back-end systems like Firebase. Alongside this, I have developed a plethora of sites for local Houston-based businesses.  " },
 
         { title: "My fledgling skills in Web Development", content: "Flashback to my sophomore year in High School, my beginnings in Web Development started. My friends and I noticed the lack of computer science opportunities at our school, so we decided to start the 'Wunsche Coding Initiative.' The entire point of the club was for the officers to teach students the ins and outs of Web Development, and to also share our passion for design and code." },
-        { title: "My first taste of Competition in Computer Science", content: "Winnings competitions is one of the biggest motivators for getting better in Web Dev. The first competition I did was for TexasUIL's Computer Programming. It was in the Java Programming language, so as a beginner in coding, needless to say it was pretty challenging. Me and my partner Carl won at the state level, and thats where I found my love for competition.  " },
-        { title: "Winning competitions for SkillsUSA Web Dev", content: "During the Summer following my Junior Year, I competed at the National level for SkillsUSA's Web Design and D Competition. Through determination and a bit of luck, me and my partner carl were able to win the entire tournament. Our success changed my viewpoint in this field and reaffirmed my passion and love for Web Design and Development. " },
+        { title: "My first taste of Competition in Computer Science", content: "Winnings competitions is one of the biggest motivators for getting better in Web Dev. The first competition I did was for TexasUIL's Computer Programming. It was in the Java Programming language, so as a beginner in coding, needless to say it was pretty challenging. Me and my partner Carl placed at the state level, and thats where I found my love for competition.  " },
+        { title: "Winning competitions for SkillsUSA Web Dev", content: "During the Summer following my Junior Year, I competed at the National level for SkillsUSA's Web Design and Development Competition. Through determination and a bit of luck, me and my partner carl were able to win the entire tournament. Our success changed my viewpoint in this field and reaffirmed my passion and love for Web Design and Development. " },
 
         // Add more sections as needed
     ];
@@ -176,7 +176,7 @@ let activeSectionIndex = 0;
     </div>
 
     <div id="content">
-        <h3> ABOUT ME</h3>
+        <h3> Freshly Brewed</h3>
         <h4>{aboutSections[activeSectionIndex].title}</h4>
         <p>{aboutSections[activeSectionIndex].content}</p>
         

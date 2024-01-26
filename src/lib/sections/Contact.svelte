@@ -154,7 +154,7 @@
 
     <div id="content">
 
-      <p>CONTACT</p>
+      <p>Lets have coffee</p>
 
       <p>If you have any questions or business inquiries, please do not hesitate to contact me. I will try to get back as soon as possible!</p>
 
