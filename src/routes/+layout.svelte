@@ -169,6 +169,14 @@ div#mobile {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
 
+    @media screen and (max-width:510px) {
+        width: 35%;
+    }
+
+    @media screen and (max-width:435px) {
+        width: 40%;
+    }
+
     a {
         width: max-content;
     }
@@ -203,11 +211,15 @@ div#mobile {
 
 
 footer {
-    background-color: lightcoral;
+ background-color: lightcoral;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    padding-bottom: 1rem;
+
+    margin: 0 auto;
 
     div#f-links {
         display: flex;
@@ -237,13 +249,17 @@ footer {
         p {
             color: white;
              margin: 0;
-             padding-bottom: 1rem;
+
+             display: flex;
+             align-items: center;
+             justify-content: center;
         }
     }
 }
 
 @media screen and (max-width:790px) {
     footer {
+        margin: 0 auto;
         flex-direction: column;
     }
 }
@@ -260,7 +276,7 @@ footer {
             <a href="#hero" on:click={scrollToSection}> Home</a>
             <a href="#about" on:click={scrollToSection}> About </a>
             <a href="#project" on:click={scrollToSection}> Projects</a>
-            <a href="#contact" on:click={scrollToSection}> Contact</a>
+            <a href="/services" > Services</a>
         </div>
 
         
@@ -270,14 +286,14 @@ footer {
     <div id="mobile">
         <a href="/"> JPMETOYER.dev</a>
 
-        <button on:click={toggleMenu}   style="cursor: pointer; width: 2.5rem; height:auto; margin-right:15px; background:none; border: none; "><img src="/icons/menu.svg" alt="Menu"  style="width: 100%; height:100%"></button>
+        <button on:click={toggleMenu}   style="cursor: pointer; width: 3.5rem; height:auto; margin-right:15px; background:none; border: none; "><img src="/icons/menu.svg" alt="Menu"  style="width: 100%; height:100%"></button>
 
         <div class="menu-panel"      class:open={isMenuOpen}>
             <a href="/"> JPMETOYER.dev</a>
             <a href="/">Home</a>
             <a href="/">About</a>
             <a href="/">Projects</a>
-            <a href="/">Contact</a>
+            <a href="/services">Services</a>
 
             <div id="slide-contact">
                 <a href="/" style="border: none;"><img src="/icons/github.svg" alt="GitHub"></a>
@@ -300,7 +316,7 @@ footer {
         <a href="#hero" on:click={scrollToSection}> Home</a>
             <a href="#about" on:click={scrollToSection}> About </a>
             <a href="#project" on:click={scrollToSection}> Projects</a>
-            <a href="#contact" on:click={scrollToSection}> Contact</a>
+            <a href="#contact" on:click={scrollToSection}> Services</a>
 
     </div>
 
