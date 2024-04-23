@@ -25,19 +25,7 @@ inject({ mode: dev ? 'development' : 'production' });
     }
 
 
-    function scrollToSection(event) {
-    event.preventDefault();
-    const targetId = event.target.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      const offsetTop = targetElement.offsetTop - 70; 
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  }
+    
 
 
 </script>
@@ -273,10 +261,10 @@ footer {
         <a href="/"> JPMETOYER.dev</a>
 
         <div id="links">
-            <a href="#hero" on:click={scrollToSection}> Home</a>
-            <a href="#about" on:click={scrollToSection}> About </a>
-            <a href="#project" on:click={scrollToSection}> Projects</a>
-            <a href="/services" > Services</a>
+            <a href="/#hero">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#project">Projects</a>
+            <a href="/services">Services</a>
         </div>
 
         
@@ -290,9 +278,9 @@ footer {
 
         <div class="menu-panel"      class:open={isMenuOpen}>
             <a href="/"> JPMETOYER.dev</a>
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Projects</a>
+            <a href="/#hero">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#project">Projects</a>
             <a href="/services">Services</a>
 
             <div id="slide-contact">
@@ -313,10 +301,10 @@ footer {
 <footer>
 
     <div id="f-links">
-        <a href="#hero" on:click={scrollToSection}> Home</a>
-            <a href="#about" on:click={scrollToSection}> About </a>
-            <a href="#project" on:click={scrollToSection}> Projects</a>
-            <a href="#contact" on:click={scrollToSection}> Services</a>
+        <a href="/#hero">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#project">Projects</a>
+        <a href="/services">Services</a>
 
     </div>
 
@@ -327,6 +315,8 @@ footer {
 
 
 </footer>
+
+
 
 
 
