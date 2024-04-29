@@ -138,7 +138,7 @@ section#hero div#content p span {
 
         <div id="content" >
             <h1>Front-End Web <span style="display: block;"> Developer</span></h1>
-            <p>Hi, I am Jean-Paul Metoyer. A passionate Web Developer <span> and Programmer, and an aspiring NYU student.</span> </p>
+            <p>Hi, I am Jean-Paul Metoyer. A passionate Web Developer <span> and Programmer, and Informatics Major at UT-Austin.</span> </p>
     
         </div>
     
