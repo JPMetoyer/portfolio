@@ -17,7 +17,7 @@ import { inject } from '@vercel/analytics';
  
 inject({ mode: dev ? 'development' : 'production' });
 
-    import '$lib/app.scss';
+    import "../lib/interface/app.scss";
     let isMenuOpen = false;
   
     function toggleMenu() {
@@ -263,8 +263,8 @@ footer {
         <div id="links">
             <a href="/#hero">Home</a>
             <a href="/#about">About</a>
+            <a href="/#career">Experience</a>
             <a href="/#project">Projects</a>
-            <a href="/services">Services</a>
         </div>
 
         
@@ -280,8 +280,9 @@ footer {
             <a href="/"> JPMETOYER.dev</a>
             <a href="/#hero">Home</a>
             <a href="/#about">About</a>
+            <a href="/#career">Experience</a>
             <a href="/#project">Projects</a>
-            <a href="/services">Services</a>
+
 
             <div id="slide-contact">
                 <a href="/" style="border: none;"><img src="/icons/github.svg" alt="GitHub"></a>
@@ -302,9 +303,10 @@ footer {
 
     <div id="f-links">
         <a href="/#hero">Home</a>
+        <a href="/#hero">Home</a>
         <a href="/#about">About</a>
+        <a href="/#career">Experience</a>
         <a href="/#project">Projects</a>
-        <a href="/services">Services</a>
 
     </div>
 

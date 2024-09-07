@@ -1,9 +1,4 @@
-<script lang="ts">
 
-    let Popup = false;
-
-
-</script>
 
 <style lang="scss">
 
@@ -103,20 +98,23 @@ article {
     }
 
     div.tools {
+        margin-top: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
 
-        span {
-            display: flex;
-            align-items: center;
-        }
+       
+     
         p {
             width: max-content;
             padding: .3rem;
             border-radius: .3rem;
             box-shadow: 0 0 10px rgba(0 ,0,0,.1);
+            @media screen and (max-width:380px) {
+            font-size:12px;
+        }
+
         }
     }
 }
@@ -152,11 +150,9 @@ article {
         div.content {
             width: 100%;
 
-            #go {
-                    font-size: 9px;
-                }
+          
 
-            p {
+            .line {
                 font-size: 14px;
 
 
@@ -176,7 +172,7 @@ article {
         }
 
         section {
-        width: 70vw;
+        width: 90vw;
     }
         
     }
@@ -206,15 +202,15 @@ article {
 <article>
 
     <div id="header">
-        <p>Cappuccino Creations</p>
-        <h3>Each project showcases my growth and journey in Web Development</h3>
+        <p>Project Menu</p>
+        <h3>Whats on the menu today?</h3>
     
     </div>
 
    
 
    
-   
+   {#each ProjectData as entry}
     <section id="afyadux">
 
         
@@ -223,8 +219,7 @@ article {
 
             <div class="container">
                 <a href="/">
-                    <img src="/images/afyadux.png" alt="">
-    
+                    <img src={`/images/${entry.img}`} alt="">    
                 </a>
 
             </div>
@@ -236,15 +231,18 @@ article {
 
         <div class="content">
 
-            <h3 style="color: #06C270; ;">AFYADUX</h3>
-            <p style="width: 20rem ;">Afyadux is a fullstack Web Application that serves as a Blood donation Outreach site, giving guides over blood science, donations, and advertising locations.</p>
+            <h3 style="color: {entry.titleColor}; ;">{entry.title}</h3>
+            <p class="line" >{entry.description}</p>
                
             <div class="tools">
-                <p style="color: rgb(255, 67, 67);">Sveltekit</p> <p style="color: orange;">Firebase</p> <p style="color: blue;">Typescript</p> 
+                <p style="color: {entry.tag1Color};">{entry.tag1}</p> 
+                
+                <p style="color: {entry.tag2Color};">{entry.tag2}</p> 
+                
+                <p style="color: {entry.tag3Color};">{entry.tag3}</p> 
                 
 
-                <span >                 <p id="go"   style="color: lightblue;">Go & Gin</p>
-                </span>
+                <p style="color: {entry.tag4Color}">{entry.tag4}</p>
             </div>
             
            
@@ -254,67 +252,97 @@ article {
 
     </section>
 
-    <section id="coding">
-
-        <div class="graphic">
-
-            <div class="container">
-                <a href="https://codinginitiative.org">
-                    <img src="/images/coding.png" alt="">
-
-                </a>
-            </div>
-
-        </div>
-
-        <div class="content">
-            <h3 style="color:#3396ff; ">CODINGINITIATIVE.org</h3>
-            <p> codinginitiative.org is a Web Development learning platform for Wunsche High School and SpringISD, where students can look the ins & outs of WebDev, find related communities, and have an access to a plethora of resources.   </p>
-            <div class="tools">
-                <p style="color: rgb(255, 67, 67);">Sveltekit</p>
-                <p style="color: orange;">Firebase</p>
-                <p style="color: blue;">Typescript</p> 
-                <p style="color: pink;">SCSS</p>
-            </div>
-            
-            
-        </div>
-
-        
-    </section>
+    {/each}
 
 
-
-    <section id="apply">
-
-        <div class="graphic">
-
-            <div class="container">
-                <a href="https://apply.codinginitiative.org">
-                    <img src="/images/apply.png" alt="">
-
-                </a>
-            </div>
-
-        </div>
-
-        <div class="content">
-            <h3 style="color:#3396ff">APPLY.CODINGINITIATIVE</h3>
-            <p>Apply.codinginitiative is a sleek Club Admission Page for the Coding Initiative club, featuring a responsive UI and enhanced security with Firebase backend integration for form collection.  </p>
-            <div class="tools">
-                <p style="color: rgb(255, 67, 67);">Sveltekit</p>
-                <p style="color: orange;">Firebase</p>
-                <p style="color: blue;">Typescript</p> 
-                <p style="color: pink;">SCSS</p>
-            </div>
-            
-            
-        </div>
-
-        
-
-    </section>
 
     
 </article>
 
+<script lang="ts">
+
+
+const ProjectData = [
+{
+    img:"afyadux.png",
+    titleColor:"#06C270",
+    title:"Afyadux",
+    description:"Afyadux is a fullstack Web Application that serves as a Blood donation Outreach site, giving guides over blood science, donations, and advertising locations.",
+    tag1:"Sveltekit",
+    tag1Color:"rgb(255, 67, 67)",
+
+    tag2:"Firebase",
+    tag2Color:"orange",
+
+    tag3:"Typescript",
+    tag3Color:"blue",
+
+    tag4:"Go",
+    tag4Color:"grey"
+
+
+
+},
+
+
+{
+    img:"fullcircle.jpeg",
+    titleColor:"#2bd84e",
+    title:"Full Circle Therapy",
+    description:"Full Circle therapy is an Mental Health Therapy Clinic based in Houston. In this design I focused on accessibility, intuition, and other design techniques.",
+    tag1:"Sveltekit",
+    tag1Color:"rgb(255, 67, 67)",
+
+    tag2:"",
+    tag2Color:"orange",
+
+    tag3:"Typescript",
+    tag3Color:"blue",
+
+    tag4:"Alma",
+    tag4Color:"green"
+    
+},
+
+{
+    img:"tci.jpeg",
+    titleColor:"#3396ff",
+    title:"The Coding Initiative ",
+    description:"The Coding Initiative is a nonprofit tech education site that serves Houston High Schools. I currently serve as the Chief Executive Officer.",
+    tag1:"Sveltekit",
+    tag1Color:"rgb(255, 67, 67)",
+
+    tag2:"",
+    tag2Color:"orange",
+
+    tag3:"Typescript",
+    tag3Color:"blue",
+
+    tag4:"Dynamic Loading",
+    tag4Color:"green"
+    
+},
+
+{
+    img:"wciapply.jpeg",
+    titleColor:"#3396ff",
+    title:"The Coding Initiative Apply page",
+    description:"The Coding Initiative Apply page serves as the form collection and reviewal system to allow, deny, and waitlsit students from the club.",
+    tag1:"Sveltekit",
+    tag1Color:"rgb(255, 67, 67)",
+
+    tag2:"Firebase",
+    tag2Color:"orange",
+
+    tag3:"Typescript",
+    tag3Color:"blue",
+
+    tag4:"Custom Backend UI",
+    tag4Color:"green"
+    
+},
+
+
+
+]
+</script>

@@ -4,6 +4,7 @@
 
     import Hero from "$lib/sections/Hero.svelte";
     import About from "$lib/sections/About.svelte";
+    import Career from "$lib/sections/Career.svelte";
     import Project from "$lib/sections/Project.svelte";
     import Contact from "$lib/sections/Contact.svelte";
 
@@ -41,6 +42,10 @@
         <About />
 
 
+    </div>
+
+    <div id="career">
+        <Career />
     </div>
 
     <div id="project" >

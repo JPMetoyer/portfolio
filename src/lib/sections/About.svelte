@@ -2,13 +2,30 @@
 
 let activeSectionIndex = 0;
     const aboutSections = [
-        { title: "A passionate Front-End Developer with experience", content: "As a beginner in Web Development and Design, I am constantly seeking for more information and education within this field. I posesse a range of skills in HTML, CSS Sveltekit, React, Javascript, Typescript, and SCSS. I have also worked with back-end systems like Firebase. Alongside this, I have developed a plethora of sites for local Houston-based businesses.  " },
-
-        { title: "My fledgling skills in Web Development", content: "Flashback to my sophomore year in High School, my beginnings in Web Development started. My friends and I noticed the lack of computer science opportunities at our school, so we decided to start the 'Wunsche Coding Initiative.' The entire point of the club was for the officers to teach students the ins and outs of Web Development, and to also share our passion for design and code." },
-        { title: "My first taste of Competition in Computer Science", content: "Winnings competitions is one of the biggest motivators for getting better in Web Dev. The first competition I did was for TexasUIL's Computer Programming. It was in the Java Programming language, so as a beginner in coding, needless to say it was pretty challenging. Me and my partner Carl placed at the state level, and thats where I found my love for competition.  " },
-        { title: "Winning competitions for SkillsUSA Web Dev", content: "During the Summer following my Junior Year, I competed at the National level for SkillsUSA's Web Design and Development Competition. Through determination and a bit of luck, me and my partner carl were able to win the entire tournament. Our success changed my viewpoint in this field and reaffirmed my passion and love for Web Design and Development. " },
-
-        // Add more sections as needed
+      {
+        title: "Freshman at UT Austin, majoring in Informatics.",
+        content:
+          "Ever since I opened up my first laptop, I have been captivated by the world of computer science. This initial curiosity sparked a journey that has led me to explore various facets of the field, from IT support and cybersecurity to web development and software engineering. After finishing my bachelor's in informatics, I plan on pursuing a master's in information security and privacy. Then I plan to leverage my education to explore the Information Security field.",
+        image: "ut.jpg"
+      },
+      {
+        title: "My fledgling skills in Web Design & Development",
+        content:
+          "I started learning web development during my sophomore year, and the following year, I started a web development club with a few of my friends. I've competed at nationals twice, Placing Gold for the first one and Silver for the recent one. Web development is one of my favorite hobbies, and I've created a variety of projects, ranging from a fullstack learning application to more artsy endeavors like my portfolio.",
+        image: "skills.JPG"
+      },
+      {
+        title: "Interest in IT, Cybersecurity, & Risk Management",
+        content:
+          "My interest in IT, cybersecurity, and risk management was sparked by hearing my mom talk about her work in risk management. This fascination led me to intern at my school district's technology department during the summers of my sophomore and junior years. During my senior year summer, I further honed my skills by working for the IT department at a local community college. These experiences have deepened my passion for protecting and managing digital systems.",
+        image: "coding.jpg"
+      },
+      {
+        title: "What I like to do for fun and Who am I?",
+        content:
+          "I love playing basketball and ping pong, and one of my favorite hobbies is cooking to pass the time. I have a Shih Tzu and a Labrador, and I grew up in Houston, Texas. In high school, I discovered my passion for programming and competing, which has shaped much of my academic and career path. I look forward to the opportunities at UT Austin and plan to take full advantage of my informatics major to further my knowledge and skills.",
+        image: "pickle.jpg"
+      }
     ];
 
     const navigateContent = (direction: 'next' | 'prev') => {
@@ -55,6 +72,8 @@ let activeSectionIndex = 0;
                 height: 20rem;
                 width: 26rem;
                 border-radius: 1.5rem;
+                 
+                object-fit: cover;
                 
             }
         }
@@ -170,8 +189,7 @@ let activeSectionIndex = 0;
 
     <div id="graphic">
 
-        <img src="/images/coffee.webp" alt="">
-
+        <img src={`/images/${aboutSections[activeSectionIndex].image}`} alt="">
 
     </div>
 
@@ -188,6 +206,7 @@ let activeSectionIndex = 0;
             
             <button on:click={() => navigateContent('next')} disabled={activeSectionIndex === aboutSections.length - 1}>
                 <img src="/icons/rightarrow.png" alt="">
+
             </button>
 
         </div>
