@@ -258,7 +258,7 @@ footer {
 
     <nav>
 
-        <a href="/"> JPMETOYER.dev</a>
+        <a href="/"> Aarushi Smells</a>
 
         <div id="links">
             <a href="/#hero">Home</a>
